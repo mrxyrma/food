@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="tabcontent">
-                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <img src="img/tabs/balance.jpeg" alt="vegy">
                     <div class="tabcontent__descr">
                         Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
                     </div>
@@ -116,7 +116,7 @@
                     <div class="offer__slide">
                         <img src="img/slider/pepper.jpg" alt="pepper">
                     </div>
-                    <!-- <div class="offer__slide">
+                    <div class="offer__slide">
                         <img src="img/slider/food-12.jpg" alt="food">
                     </div>
                     <div class="offer__slide">
@@ -124,7 +124,7 @@
                     </div>
                     <div class="offer__slide">
                         <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> -->
+                    </div> 
                 </div>
             </div>
         </div>
@@ -141,8 +141,8 @@
                     Ваш пол
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div class="calculating__choose-item">Мужчина</div>
+                    <div id='female' class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div id='male' class="calculating__choose-item">Мужчина</div>
                 </div>
 
                 <div class="calculating__subtitle">
@@ -158,10 +158,10 @@
                     Выберите вашу физическая активность
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div id="low" class="calculating__choose-item">Низкая активность </div>
-                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
-                    <div id="medium" class="calculating__choose-item">Умеренная активность</div>
-                    <div id="high" class="calculating__choose-item">Высокая активность</div>
+                    <div data-ratio="1.2" id="low" class="calculating__choose-item">Низкая активность </div>
+                    <div data-ratio="1.375" id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
+                    <div data-ratio="1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
+                    <div data-ratio="1.725" id="high" class="calculating__choose-item">Высокая активность</div>
                 </div>
 
                 <div class="calculating__divider"></div>
@@ -182,10 +182,8 @@
 
     <div class="menu">
         <h2 class="title">Наше меню на день</h2>
-
         <div class="menu__field">
-            <div class="container">
-                
+            <div class="container">    
             </div>
         </div>
     </div>
@@ -213,7 +211,7 @@
                     Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
                     Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
                     <br><br>
-                    Акция закончится 20 мая в 00:00
+                    Акция закончится 1 декабря в 00:00
                 </div>
             </div>
             <div class="promotion__timer">
@@ -262,7 +260,7 @@
         <div class="modal__dialog">
             <div class="modal__content">
                 <form action="#">
-                    <div class="modal__close">&times;</div>
+                    <div data-close class="modal__close">&times;</div>
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
                     <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
@@ -271,6 +269,6 @@
             </div>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/bundle.js"></script>
 </body>
 </html>
